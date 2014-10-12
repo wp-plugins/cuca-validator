@@ -6,8 +6,6 @@ Tested up to: 3.9.2
 Stable tag: 1.0
 
 Mathematical Captcha Validator
-Word Captcha Validator
-Color Captcha Validator
 
 
 == Description ==
