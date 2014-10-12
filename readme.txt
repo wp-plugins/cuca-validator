@@ -3,7 +3,7 @@ Tags: Mathematical Captcha
 Donate link: https://www.paypal.com/it/cgi-bin/webscr?cmd=_flow&SESSION=iycQFMh5kaio6BSQJhwCjxiaybYp6vkauSbUwpE0Ro7W4conuS2QZcon-QG&dispatch=5885d80a13c0db1f8e263663d3faee8dae318ac9ffd6aa6b72a490566890f82e
 Requires at least: 3.0
 Tested up to: 3.9.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 Mathematical Captcha Validator
 
@@ -21,8 +21,11 @@ CuCa Validator can handle any form.
 * Otherwise you can download the plugin from within your WordPress blog and let the it do the job for you.
 
 == Screenshots ==
-1. Admin Panel 1.0
-2. CuCa 1.0
+1. CuCa Math Validator
+
+2. CuCa Math admin panel
+
+3. CuCa Math example
 
 == Changelog ==
 - Italian - translation added
