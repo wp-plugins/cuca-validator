@@ -25,12 +25,12 @@ In the admin panel you can set up the captcha difficult.
 
 == Installation ==
 
-*   Download CuCa Validator, extract the folder.
-*   Upload it to your \`/wp-content/plugins/\` directory.
-*   Activate the plugin through the \'Plugins\' menu in WordPress.  
+-   Download CuCa Validator, extract the folder.
+-   Upload it to your \`/wp-content/plugins/\` directory.
+-   Activate the plugin through the \'Plugins\' menu in WordPress.  
     [DONE!]
 
--	Otherwise you can download the plugin from within your WordPress blog and let the it do the job for you.
+*	Otherwise you can download the plugin from within your WordPress blog and let the it do the job for you.
 
 
 
