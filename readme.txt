@@ -1,6 +1,6 @@
 ﻿=== CuCa Validator ===
 Contributors:  
-Donate link:https://www.paypal.com/cgi-bin/webscr
+Donate link: https://www.paypal.com/it/cgi-bin/webscr?cmd=_flow&SESSION=eORS0ocRI2x8vWQFgROFP4y7p8oM58PXL4TIw7COmk_4NfGAk1PVlUrUyPK&dispatch=5885d80a13c0db1f8e263663d3faee8d66f31424b43e9a70645c907a6cbd8fb4
 Tags: Mathematical Captcha
 Requires at least: 3.0
 Tested up to: 4.0
