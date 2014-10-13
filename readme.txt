@@ -10,16 +10,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-Stop bots from spamming into your site with CuCa Captcha Validator.
+We don't want spam bots to control our forms!
+But we don't want ugly captcha blocks to stick on our site and destroy our theme layout, either!!
 
 
 
 == Description ==
 
-CuCa Validator comes to prevent spam to overflow into your site, using captchas.
-Each captcha module is handled by a shortcode and can easily be added into any post/page.
-CuCa Validator can handle any form. Set up the captcha difficulty from the admin page.
-Maximize your captcha experience by choosing one of the skins and have it adapt the best to your site theme.
+We don't want spam bots to control our forms!
+But we don't want ugly captcha blocks to stick on our site and destroy our theme layout either!!
+
+**CuCa Validator** comes to prevent spam to overflow into your site, using nicely designed captchas modules.
+Choose between the skins built in and have CuCa fit into your theme. Or if you don't want any module at all,
+just set up your captcha your way.
+
+Each captcha module is handled by a **shortcode** and can easily be added into any post/page.
+Set up the captcha difficulty from the admin page.
+
+**CuCa Validator** stops spams the nice way, and maximize user experience.
+
 
 
 **CuCa Math Validator** Makes you solve a simple math operation to validate the form and let you continue your navigation.
