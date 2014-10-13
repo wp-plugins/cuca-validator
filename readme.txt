@@ -11,14 +11,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 We don't want spam bots to control our forms!
-But we don't want ugly captcha blocks to stick on our site and destroy our theme layout, either!!
+But we don't want ugly captcha blocks, either!!
 
 
 
 == Description ==
 
 We don't want spam bots to control our forms!
-But we don't want ugly captcha blocks to stick on our site and destroy our theme layout either!!
+And we don't want ugly captcha blocks to stick on our site and destroy our theme layout!!
 
 **CuCa Validator** comes to prevent spam to overflow into your site, using nicely designed captchas modules.
 Choose between the skins built in and have CuCa fit into your theme. Or if you don't want any module at all,
