@@ -13,20 +13,16 @@ Mathematical Captcha Validator
 == Description ==
 
 CuCa Validator comes to prevent spam to overflow into your site.
-Each module is handled by a shortcode and can easily be added into any post/page of your site.
-CuCa Validator can handle any form.
+Each module is handled by a shortcode and can easily be added into any post/page.
+CuCa Validator can handle any form. Set up the captcha difficulty from the admin page.
+Maximize your captcha experience by choosing one of the skins and have it adapt to your site theme.
 
 
-**CuCa Math Validator**
+**CuCa Math Validator** Makes you solve a simple math operation to validate the form and let you continue your navigation.
 
-Solve a simple math operation to validate your form and continue your navigation experience.
-In the admin panel you can set up the captcha difficult.
+**CuCa Word Validator** (Work in progress) - Makes you solve a standar alphanumeric captcha like the ones you're used to.
 
 
-**CuCa Word Validator**
-
-(Work in progress) - Solve a simple alppanumeric captcha to unlock your form.
- 
 
 == Installation ==
 
