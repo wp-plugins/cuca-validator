@@ -31,7 +31,7 @@ Maximize your captcha experience by choosing one of the skins and have it adapt 
 -   Activate the plugin through the \'Plugins\' menu in WordPress.  
     [DONE!]
 
-*	Otherwise you can download the plugin from within your WordPress blog and let the it do the job for you.
+*	Otherwise you can download the plugin from your WordPress blog admin panel and let it do the job for you.
 
 
 
