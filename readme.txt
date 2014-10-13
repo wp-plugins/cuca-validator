@@ -16,7 +16,9 @@ CuCa Validator comes to prevent spam to overflow into your site.
 Each module is handled by a shortcode and can easily be added into any post/page of your site.
 CuCa Validator can handle any form.
 
+
 **CuCa Math Validator**
+
 Solve a simple math operation to validate your form and continue your navigation experience.
 In the admin panel you can set up the captcha difficult.
 
