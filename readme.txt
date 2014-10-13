@@ -23,7 +23,7 @@ Solve a simple math operation to validate your form and continue your navigation
 In the admin panel you can set up the captcha difficult.
 
 
-** CuCa Word Validator**
+**CuCa Word Validator**
 
 (Work in progress) - Solve a simple alppanumeric captcha to unlock your form.
  
