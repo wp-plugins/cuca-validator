@@ -5,8 +5,12 @@ Tags: Mathematical Captcha
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Mathematical Captcha Validator
+
+
+Stop bots from spamming into your site with CuCa Captcha Validator.
 
 
 
@@ -45,9 +49,3 @@ Maximize your captcha experience by choosing one of the skins and have it adapt 
 == Changelog ==
  
 *   Italian - translation added
-
- 
-
-==Readme Generator== 
-
-This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
