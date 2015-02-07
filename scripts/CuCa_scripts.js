@@ -1,20 +1,28 @@
 /* Variabili iniettate da php
 	MATHEMATCICAL CAPTCHA 	=>		pluginpath	|	primoNum	|	secondoNum	|	plus	|	minus	|	mul		|	div		|	skin
 	WORD CAPTCHA			=>		pluginpath	|
-	COLOR CAPTCHA			=>		CuCa_color_trialN
 */
 
 
 	/* Blocchiamo il form o il campo di testo all'esecuzione dello script */
-jQuery('.CuCaM').attr('disabled',true);
+jQuery('.CuCaM, .CuCaW').attr('disabled',true);
 
 
 	/* Esito captcha try - Form */
-jQuery('.CuCaM, .CuCaW, .CuCaC').submit(function(){
+jQuery('.CuCaM, .CuCaW').submit(function(){
 	switch (jQuery(this).attr('class')){
 		case 'CuCaM':
 			if(CuCaMathValidated != true){
 				jQuery('#CuCa-math-answer').focus();
+				return false;
+			}else{
+				return true;
+			}
+			break;
+		case 'CuCaW':
+			if(CuCaWordValidated != true){
+				jQuery('.CuCa_Word').addClass('CuCa_denied');
+				jQuery('#CuCa-word-answer').focus();
 				return false;
 			}else{
 				return true;
@@ -76,3 +84,32 @@ function ValidateCuCaMath(){
 }
 renderMathCuCa();
 jQuery('#CuCa-math-answer').bind('keyup',ValidateCuCaMath);
+
+
+
+//----------- ALPHANUMERIC CAPTCHA (class="CuCa-wUnlock")---------------//
+//----------------------------------------------------------------------//
+var CuCaWordValidated = false;
+
+
+	/* Captcha refresh button */
+function ValidateCuCaWord(){
+	value = jQuery('#CuCa-word-answer').val().toUpperCase();
+	if(value !== jQuery('#CuCa_WC div').html() || value == ''){
+		CuCaWordValidated = false;
+		CuCaFieldLock(jQuery('.CuCaW'),true);
+	}else{
+		CuCaWordValidated = true;
+		CuCaFieldLock(jQuery('.CuCaW'),false);
+	}
+}
+jQuery('#CuCa_word_refresh').click(function(e){
+	e.preventDefault();
+	CuCaFieldLock(jQuery('.CuCaW'),true);
+	jQuery('#CuCa_WC div').remove();
+	jQuery('#CuCa_WC').load(scriptParams.pluginpath+'includes/CuCa-word-generator-code.php div', function(){
+		jQuery('#CuCa_Word_img').attr('src', scriptParams.pluginpath+'includes/CuCa-word-generator-img.php?'+Math.random());
+		jQuery('#CuCa-word-answer').val('').focus();
+	});
+});
+jQuery('#CuCa-word-answer').bind('keyup',ValidateCuCaWord);

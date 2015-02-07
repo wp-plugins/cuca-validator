@@ -20,6 +20,7 @@ require_once(CUCA_PLUGIN_PATH.'CuCa-init.php');
 	register_activation_hook( __FILE__, 'CuCa_default');
 	register_deactivation_hook( __FILE__, 'CuCa_deactivation');
 require_once(CUCA_PLUGIN_PATH.'includes/CuCa-mathematical-generator.php');
+require_once(CUCA_PLUGIN_PATH.'includes/CuCa-word-generator.php');
 require_once(CUCA_PLUGIN_PATH.'CuCa-adminpage.php');
 
 
@@ -50,6 +51,7 @@ function CuCa_settings_page_builder(){
 	_e('Stop your spam with a simple mathematical operation','CuCa-Validator');
 	echo "</font>";
 	echo CuCa_math();
+	echo CuCa_word();
 	echo CuCa_donation();
 	echo "</div>";
 }
@@ -67,8 +69,6 @@ $script_params = array(
 	'skin' => get_option('CuCa_math_skin'),
 	/* Captcha Alfanumerico */
 	'CuCa_word_skin' => get_option('CuCa_word_skin'),
-	/* Captcha Colore */
-	'CuCa_color_trialN' => get_option('CuCa_color_trialN'),
 	/* Captcha Generale */
 	'pluginpath' => CUCA_PLUGIN_URL,
 );

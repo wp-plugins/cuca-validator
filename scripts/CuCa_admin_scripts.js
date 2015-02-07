@@ -6,7 +6,7 @@
 //					Settings menu scripts						//
 //--------------------------------------------------------------//
 	/* Blocchiamo il form o il campo di testo all'esecuzione dello script */
-jQuery('.CuCaM').attr('disabled',true);
+jQuery('.CuCaM, .CuCaW').attr('disabled',true);
 
 
 
@@ -69,6 +69,89 @@ Melem.submit(function(){
 	return true;
 });
 
+
+
+	/* CuCa word setting scripts*/
+var Welem = jQuery('[name=CuCa_word_settings_module_form]');
+function CuCa_word_Skin(){
+	Welem.find('input').not('[name=CuCa_word_skin_enable], input[type=submit]').prop('disabled', true);
+	jQuery('[name=CuCa_word_fontFamily]').prop('disabled', true);
+	jQuery('[name=CuCa_word_skin]').prop('disabled', false);
+	jQuery('[name=CuCa_word_skin] option:first').attr('disabled', true);
+}
+function CuCa_word_noSkin(){
+	Welem.find('input').prop('disabled', false);
+	jQuery('[name=CuCa_word_fontFamily]').prop('disabled', false);
+	jQuery('[name=CuCa_word_skin]').val('CuCa_word_custom').prop('disabled', true);
+	jQuery('[name=CuCa_word_skin] option:first').attr('disabled', false);
+
+	jQuery('[name=CuCa_word_width]').val('180');
+	jQuery('[name=CuCa_word_height]').val('50');
+	jQuery('[name=CuCa_word_strLength]').val('6');
+	jQuery('[name=CuCa_word_fontColor]').prop('checked',true);
+}
+if(jQuery('[name=CuCa_word_skin_enable]').prop('checked')==true) CuCa_word_Skin(); else	CuCa_word_noSkin();
+jQuery('[name=CuCa_word_skin_enable]').click(function(){ if(jQuery(this).prop('checked')==true)	CuCa_word_Skin(); else CuCa_word_noSkin(); });
+Welem.submit(function(){
+	Welem.find('input').prop('disabled', false);
+	jQuery('[name=CuCa_word_fontFamily]').prop('disabled', false);
+	jQuery('[name=CuCa_word_skin]').prop('disabled', false);	
+	return true;
+});
+jQuery('[name=CuCa_word_skin]').change(function(){
+	switch (jQuery(this).val()){
+		case 'CuCa_word_classic':
+			jQuery('[name=CuCa_word_width]').val('176');
+			jQuery('[name=CuCa_word_height]').val('50');
+			jQuery('[name=CuCa_word_strLength]').val('5');
+			jQuery('[name=CuCa_word_strLength_rnd]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontFamily]').val('SansBlack');
+			jQuery('[name=CuCa_word_rotation]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontSize]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontColor]').prop('checked',true);		
+			break;
+		case 'CuCa_word_modern':
+			jQuery('[name=CuCa_word_width]').val('180');
+			jQuery('[name=CuCa_word_height]').val('40');
+			jQuery('[name=CuCa_word_strLength]').val('8');
+			jQuery('[name=CuCa_word_strLength_rnd]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontFamily]').val('Anorexia');
+			jQuery('[name=CuCa_word_rotation]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontSize]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontColor]').prop('checked',false);
+			break;
+		case 'CuCa_word_orange':
+			jQuery('[name=CuCa_word_width]').val('190');
+			jQuery('[name=CuCa_word_height]').val('40');
+			jQuery('[name=CuCa_word_strLength]').val('8');
+			jQuery('[name=CuCa_word_strLength_rnd]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontFamily]').val('TankLite');
+			jQuery('[name=CuCa_word_rotation]').prop('checked',true);
+			jQuery('[name=CuCa_word_fontSize]').prop('checked',true);
+			jQuery('[name=CuCa_word_fontColor]').prop('checked',true);
+			break;
+		case 'CuCa_word_minimal':
+			jQuery('[name=CuCa_word_width]').val('70');
+			jQuery('[name=CuCa_word_height]').val('30');
+			jQuery('[name=CuCa_word_strLength]').val('3');
+			jQuery('[name=CuCa_word_strLength_rnd]').prop('checked',true);
+			jQuery('[name=CuCa_word_fontFamily]').val('Decker');
+			jQuery('[name=CuCa_word_rotation]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontSize]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontColor]').prop('checked',true);
+			break;
+		case 'CuCa_word_elegant':
+			jQuery('[name=CuCa_word_width]').val('179');
+			jQuery('[name=CuCa_word_height]').val('49');
+			jQuery('[name=CuCa_word_strLength]').val('6');
+			jQuery('[name=CuCa_word_strLength_rnd]').prop('checked',false);
+			jQuery('[name=CuCa_word_fontFamily]').val('Calibri');
+			jQuery('[name=CuCa_word_rotation]').prop('checked',true);
+			jQuery('[name=CuCa_word_fontSize]').prop('checked',true);
+			jQuery('[name=CuCa_word_fontColor]').prop('checked',true);		
+			break;
+	}
+});
 
 
 
