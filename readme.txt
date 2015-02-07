@@ -33,7 +33,9 @@ Set up the captcha difficulty from the admin page.
 
 **CuCa Math Validator** Makes you solve a simple math operation to validate the form and let you continue your navigation.
 
-**CuCa Word Validator** (Work in progress) - Makes you solve a standar alphanumeric captcha like the ones you're used to.
+**CuCa Word Validator** Makes you solve a standar alphanumeric captcha like the ones you're used to.
+
+**CuCa Color Validator** Coming soon
 
 
 
