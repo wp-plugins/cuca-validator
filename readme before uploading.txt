@@ -1,4 +1,0 @@
--- Versione 3.0 completa dei 3 captcha
--- Prima di andare online verificare che non ci siano file non utilizzati (es. immagini)
--- Prima di andare online apportare eventuali modifiche aggiunte alle versioni precedenti
--- Prima di andare online verificare correttezza file traduzioni
